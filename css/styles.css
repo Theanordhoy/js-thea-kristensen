@@ -9,9 +9,42 @@ body {
     text-decoration: none;
 }
 
-.nav-links {
+.nav-links, #menu-checkbox {
     font-family: 'Oswald', sans-serif;
     list-style: none;
+    display: none;
+}
+
+#menu-checkbox:checked ~ .nav-links {
+    display: block;
+} 
+
+.nav-links {
+    position:absolute;
+    background: #E8F8FB;
+    padding: 20px 30px;
+}
+
+@media (min-width: 600px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+header {
+    position:relative   
 }
 
 .nav-icons {
@@ -174,4 +207,13 @@ section a {
 
 .product-title a {
     text-decoration: none;
+}
+
+.form__input {
+    display: block;
+}
+
+.checkout-image {
+    width: 100px;
+    height: auto;
 }

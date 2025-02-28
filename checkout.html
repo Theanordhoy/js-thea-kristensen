@@ -23,7 +23,64 @@
     </header>
     <main>
         <h1>Checkout</h1>
+        <form>
+            <fieldset>
+                <legend>Billing Address</legend>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" class="form__input" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" class="form__input" required>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" class="form__input" required>
+                <label for="zipcode">Zip Code</label>
+                <input type="tel" id="zipcode" name="zipcode" class="form__input" required>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" class="form__input" required>
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" id="phonenumber" name="phonenumber" class="form__input" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form__input" required>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Method</legend>
+                <input type="radio" id="standard" name="delivery" value="standard" class="form__input" checked>
+                <label for="standard">Standard (4-5 business days) Free</label>
+                <input type="radio" id="express" name="delivery" value="express" class="form__input">
+                <label for="express">Express (1-2 business days) $9</label>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Details</legend>
+                <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
+                <label for="creditcard">Credit Card
+                    <input type="tel" id="creditcardnumber" name="creditcardnumber" class="form__input" placeholder="Card Number" required>
+                    <input type="text" id="cardholdername" name="cardholdername" class="form__input" placeholder="Cardholder Name" required>
+                    <input type="tel" id="expirationdate" name="expirationdate" class="form__input" placeholder="Exp. Date MM.YYYY" required>
+                    <input type="tel" id="cvv" name="cvv" class="form__input" placeholder="CVV" required>
+                </label>
+                <input type="radio" id="Paypal" name="payment" value="Paypal" class="form__input">
+                <label for="Paypal">Paypal</label>
+                <input type="radio" id="Klarna" name="payment" value="Klarna" class="form__input">
+                <label for="Klarna">Klarna</label>
+            </fieldset>
+            <input type="checkbox" id="terms" name="terms" class="form__input" required>
+            <label for="terms">I have read and agree to the Terms and Conditions</label>
+            <input type="checkbox" id="newsletter" name="newsletter" class="form__input">
+            <label for="newsletter">I want to recieve emails with offers, new trends and styles</label>
+        </form>
         <a href="confirmation.html" class="place-order-button">Place Order</a>
+        <section>
+            <h1>Order Summary</h1>
+            <article>
+                <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="checkout-image">
+                <h2>Endurance Softshell Jacket</h2>
+                <p>Color: Red</p>
+                <p>Size: Large</p>
+            </article>
+            <p>Subtotal: $79</p>
+            <p>Shipping: $0</p>
+            <p>Estimated taxes: $0</p>
+            <p>Total: $79</p>
+        </section>
     </main>
     <footer>
         <section>
