@@ -1,0 +1,177 @@
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+.nav-links a {
+    color: #0A3641;
+    text-decoration: none;
+}
+
+.nav-links {
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+}
+
+.nav-icons {
+    color:#0A3641
+}
+
+.nav-breadcrumbs {
+    font-family: 'roboto', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    background-image: url('../images/Logo-with-slogan.png');
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position:top;
+    background-color: #0A3641;
+    font-family: 'roboto', sans-serif;
+    color: white;
+}
+
+.button-homepage-big {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.875rem;
+    background-color: #0A3641;
+    color: white;
+    text-decoration: none;
+    padding: 5px 60px;
+    border-radius: 50px;
+    
+}
+
+.slogan {
+    color: white;
+    font-size: 4rem;
+}
+
+.button-homepage-small {
+    font-size: 0.875rem;
+    text-decoration: none;
+    border:#000 solid 1px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.inspo-text {
+    font-family: 'oswald', sans-serif;
+}
+
+section a {
+    font-family: 'roboto', sans-serif;
+    color: #000;
+}
+
+
+.see-more-button, .continue-shopping {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #8CB8C3;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: none;
+}
+
+.circle-blue {
+    width: 15px;
+    height: 15px;
+    background-color: #1F4CF0;
+    border-radius: 50%;
+    
+}
+
+.logo-witout-slogan {
+    width: 120px;
+    height: auto;
+}
+
+.confirmation-icon {
+    color: #8CB8C3;
+    font-size: 100px;
+}
+
+.add-to-cart-button, .checkout-button, .place-order-button {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.25rem;
+    background-color: #0A3641;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: none;
+}
+
+.discount-code {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: black solid 1px;
+}
+
+.welcome {
+    background-image: url('../images/skiing.jpg');
+    min-height: 800px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.image-2 {
+    background-image: url('../images/hiking.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.image-3 {
+    background-image: url('../images/canoing.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.camping-image {
+    background-image: url('../images/camping.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-image {
+    width: 400px;
+    height: auto;
+}
+
+.product-image-small {
+    width: 150px;
+    height: auto;
+}
+
+.product-title {
+    font-family: 'roboto', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.product-image {
+    display: block;
+}
+
+.product-title a {
+    text-decoration: none;
+}
