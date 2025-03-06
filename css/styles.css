@@ -4,6 +4,21 @@ body {
     font-weight: 400;
 }
 
+.logo-witout-slogan {
+    width: 120px;
+    height: auto;
+}
+
+header {
+    position:relative   
+}
+
+.product-image-small {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation*/
 .nav-links a {
     color: #0A3641;
     text-decoration: none;
@@ -25,30 +40,13 @@ body {
     padding: 20px 30px;
 }
 
-@media (min-width: 600px) {
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        background: none;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-
-    .nav-links a {
-        display: inline-block;
-        margin-right: 20px;
-    }
-}
-
-header {
-    position:relative   
+.nav__content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-icons {
-    color:#0A3641
+    color: #0A3641;
 }
 
 .nav-breadcrumbs {
@@ -57,16 +55,33 @@ header {
     text-decoration: none;
 }
 
+/* Footer */
 footer {
-    background-image: url('../images/Logo-with-slogan.png');
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position:top;
     background-color: #0A3641;
+    background-position-x: 10px;
     font-family: 'roboto', sans-serif;
     color: white;
+    padding: 20px;
 }
 
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo-with-slogan {
+    width: 120px;
+}
+
+.footer__content ul li {
+    display: none;
+}
+
+
+/* Homepage */
 .button-homepage-big {
     font-family: 'oswald', sans-serif;
     font-size: 1.875rem;
@@ -81,6 +96,9 @@ footer {
 .slogan {
     color: white;
     font-size: 4rem;
+    margin: 0;
+    text-align: right;
+    padding: 50px;
 }
 
 .button-homepage-small {
@@ -98,57 +116,6 @@ footer {
 section a {
     font-family: 'roboto', sans-serif;
     color: #000;
-}
-
-
-.see-more-button, .continue-shopping {
-    font-family: 'roboto', sans-serif;
-    font-size: 1rem;
-    background-color: #8CB8C3;
-    color: #000;
-    border-radius: 50px;
-    padding: 10px 50px;
-    text-decoration: none;
-    border: none;
-}
-
-.circle-blue {
-    width: 15px;
-    height: 15px;
-    background-color: #1F4CF0;
-    border-radius: 50%;
-    
-}
-
-.logo-witout-slogan {
-    width: 120px;
-    height: auto;
-}
-
-.confirmation-icon {
-    color: #8CB8C3;
-    font-size: 100px;
-}
-
-.add-to-cart-button, .checkout-button, .place-order-button {
-    font-family: 'roboto', sans-serif;
-    font-size: 1.25rem;
-    background-color: #0A3641;
-    color: #fff;
-    border-radius: 50px;
-    padding: 10px 50px;
-    text-decoration: none;
-    border: none;
-}
-
-.discount-code {
-    font-family: 'roboto', sans-serif;
-    font-size: 1rem;
-    color: #000;
-    border-radius: 50px;
-    padding: 10px 50px;
-    text-decoration: none;
-    border: black solid 1px;
 }
 
 .welcome {
@@ -176,22 +143,46 @@ section a {
     background-repeat: no-repeat;
 }
 
-.camping-image {
-    background-image: url('../images/camping.jpg');
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Men's jackets page */
+.circle-blue,
+.circle-black,
+.circle-green,
+.circle-yellow,
+.circle-orange,
+.circle-red {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.circle-blue {
+    background-color: #1F4CF0;
+}
+
+.circle-green {
+    background-color: #0B8531;
+}
+
+.circle-black {
+    background-color: #000;
+}
+
+.circle-yellow {
+    background-color: #FFE44E;
+}
+
+.circle-orange {
+    background-color: #F45116;
+}
+
+.circle-red {
+    background-color: #EB1010;
 }
 
 .product-image {
     width: 400px;
     height: auto;
-}
-
-.product-image-small {
-    width: 150px;
-    height: auto;
+    display: block;
 }
 
 .product-title {
@@ -201,19 +192,141 @@ section a {
     
 }
 
-.product-image {
-    display: block;
-}
-
 .product-title a {
     text-decoration: none;
 }
 
+/* Cart page*/ 
+.discount-code {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: black solid 1px;
+}
+
+/*Checkout page */
 .form__input {
     display: block;
 }
-
 .checkout-image {
     width: 100px;
     height: auto;
 }
+
+/* Confirmation page */
+.camping-image {
+    background-image: url('../images/camping.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.confirmation-icon {
+    color: #8CB8C3;
+    font-size: 100px;
+}
+
+/* Buttons */
+.see-more-button, .continue-shopping {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #8CB8C3;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: none;
+}
+
+.add-to-cart-button, .checkout-button, .place-order-button {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.25rem;
+    background-color: #0A3641;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: none;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .nav__content {
+        align-items: center;
+    }
+
+    .inspiration-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .footer__content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 30px;
+    }
+    
+    .footer__content > div {
+        flex: 1;
+    }
+    
+    .logo-with-slogan {
+        width: 120px;
+        justify-self:center;
+        align-self: center;
+    }
+    
+    .footer__content h3,
+    .footer__content i {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .footer__content ul {
+        list-style-type: none;
+        padding:  0;
+        margin: 0;
+    }
+    
+    .footer__content li {
+        margin-bottom: 8px;
+    }
+
+    .footer__content ul li {
+        display: flex;
+    }
+    
+    .footer__content i {
+        margin-right: 10px;
+    }
+    
+}
+
+/* Desktop */
+
