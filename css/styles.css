@@ -34,19 +34,29 @@ header {
     display: block;
 } 
 
+.hamburger-icon {
+    font-size: 2rem;
+    color:#0A3641;
+    margin: 5px;
+}
+
 .nav-links {
     position:absolute;
     background: #E8F8FB;
     padding: 20px 30px;
+    font-size: 1.5rem;
 }
 
 .nav__content {
     display: flex;
     justify-content: space-between;
+    padding: 10px 0px;
 }
 
 .nav-icons {
     color: #0A3641;
+    font-size: 1.5rem;
+    margin: 5px;
 }
 
 .nav-breadcrumbs {
@@ -60,6 +70,7 @@ footer {
     background-color: #0A3641;
     background-position-x: 10px;
     font-family: 'roboto', sans-serif;
+    font-size: 0.8rem;
     color: white;
     padding: 20px;
 }
@@ -68,7 +79,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
 
@@ -90,6 +100,9 @@ footer {
     text-decoration: none;
     padding: 5px 60px;
     border-radius: 50px;
+    position: relative;
+    top: 510px;
+    left: 30px;
     
 }
 
@@ -98,7 +111,11 @@ footer {
     font-size: 4rem;
     margin: 0;
     text-align: right;
-    padding: 50px;
+    padding: 50px 102px 0px 0px;
+}
+
+.slogan-part-two {
+    padding: 10px 50px 0px 0px;
 }
 
 .button-homepage-small {
@@ -155,33 +172,69 @@ section a {
     border-radius: 50%;
 }
 
-.circle-blue {
+.circle-red-big,
+.circle-blue-big,
+.circle-green-big,
+.circle-black-big {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.circle-black-small,
+.circle-blue-small,
+.circle-green-small,
+.circle-orange-small,
+.circle-red-small,
+.circle-yellow-small {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.circle-blue,
+.circle-blue-big,
+.circle-blue-small {
     background-color: #1F4CF0;
 }
 
-.circle-green {
+.circle-green,
+.circle-green-big,
+.circle-green-small {
     background-color: #0B8531;
 }
 
-.circle-black {
+.circle-black,
+.circle-black-big,
+.circle-black-small {
     background-color: #000;
 }
 
-.circle-yellow {
+.circle-yellow,
+.circle-yellow-small {
     background-color: #FFE44E;
 }
 
-.circle-orange {
+.circle-orange,
+.circle-orange-small {
     background-color: #F45116;
 }
 
-.circle-red {
+.circle-red,
+.circle-red-big,
+.circle-red-small {
     background-color: #EB1010;
 }
 
+.colorchoice-medium,
+.colorchoice-big,
+.colorchoice-small {
+    display: flex;
+    gap: 5px;
+}
+
 .product-image {
-    width: 400px;
-    height: auto;
+    height: 380px;
     display: block;
 }
 
@@ -194,6 +247,11 @@ section a {
 
 .product-title a {
     text-decoration: none;
+}
+
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax( 1fr));
 }
 
 /* Cart page*/ 
@@ -254,7 +312,89 @@ section a {
 }
 
 /* Tablet */
-@media (min-width: 600px) {
+@media (min-width: 725px) and (max-width: 1000px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .nav__content {
+        align-items: center;
+        padding: 0px;
+    }
+
+    .inspiration-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .footer__content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+    
+    .footer__content > div {
+        flex: 1;
+    }
+    
+    .logo-with-slogan {
+        width: 120px;
+        justify-self:center;
+        align-self: center;
+    }
+    
+    .footer__content h3,
+    .footer__content i {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .footer__content ul {
+        list-style-type: none;
+        padding:  0;
+        margin: 0;
+    }
+    
+    .footer__content li {
+        margin-bottom: 8px;
+    }
+
+    .footer__content ul li {
+        display: flex;
+    }
+    
+    .footer__content i {
+        margin-right: 10px;
+    }
+
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 20px;
+    }
+    
+}
+
+/* Desktop */
+@media (min-width: 1001px) {
     .nav-links {
         display: flex;
         flex-direction: row;
@@ -275,6 +415,7 @@ section a {
 
     .nav__content {
         align-items: center;
+        padding: 0px;
     }
 
     .inspiration-content {
@@ -325,8 +466,11 @@ section a {
     .footer__content i {
         margin-right: 10px;
     }
-    
+
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 20px;
+    }
+
 }
-
-/* Desktop */
-

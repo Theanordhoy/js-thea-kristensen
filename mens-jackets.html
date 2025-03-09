@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav__content">
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" id="menu-icon" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
             <ul class="nav-links">
@@ -46,63 +46,75 @@
             <p>Size</p>
             <p>Relevance</p>
         </section>
-        <section>
+        <section class="products__list">
             <div class="product">
                 <h2 class="product-title">
                     <a href="product.html"><img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="product-image">
                         Endurance Softshell Jacket
                     </a>
                 </h2> 
-                <div class="circle-blue"></div>
-                <div class="circle-green"></div>
-                <div class="circle-black"></div>             
+                <div class="colorchoice-medium">
+                    <div class="circle-blue"></div>
+                    <div class="circle-green"></div>
+                    <div class="circle-black"></div>   
+                </div>     
                 <p>Color: blue, green, black</p>
                 <p>Price: $79</p>
             </div>
             <div class="product">
                 <img src="images/Jacket-2.jpg" alt="Black Windbreaker Jacket" class="product-image">
                 <h2 class="product-title">Scott Windbreaker 2.0</h2>
-                <div class="circle-blue"></div>
-                <div class="circle-green"></div> 
-                <div class="circle-yellow"></div>  
-                <div class="circle-red"></div> 
+                <div class="colorchoice-medium">
+                     <div class="circle-blue"></div>
+                     <div class="circle-green"></div> 
+                    <div class="circle-yellow"></div>  
+                    <div class="circle-red"></div> 
+                </div>
                 <p>Color: blue, green, yellow, red</p>
                 <p>Price: $99</p>
             </div>
             <div class="product">
                 <img src="images/Jacket-3.jpg" alt="Black Jacket" class="product-image">
                 <h2 class="product-title">Scott Nordic Jacket</h2>
-                <div class="circle-blue"></div> 
-                <div class="circle-green"></div> 
-                <div class="circle-orange"></div>  
+                <div class="colorchoice-medium">
+                    <div class="circle-blue"></div> 
+                    <div class="circle-green"></div> 
+                    <div class="circle-orange"></div>  
+                </div>
                 <p>Color: blue, green, orange</p>
                 <p>Price: $129</p>
             </div>
             <div class="product">
                 <img src="images/Jacket-4.jpg" alt="Grey Softshell Jacket" class="product-image">
                 <h2 class="product-title">Scott Softshell Jacket</h2>
-                <div class="circle-red"></div>
-                <div class="circle-black"></div>
+                <div class="colorchoice-medium">
+                    <div class="circle-red"></div>
+                    <div class="circle-black"></div>
+                </div>
                 <p>Color: red, black</p>
                 <p>Price: $89</p>
             </div>
             <div class="product">
                 <img src="images/Jacket-5.jpg" alt="Green Fleece Jacket" class="product-image">
                 <h2 class="product-title">Fleece Jacket</h2>
-                <div class="circle-blue"></div>
-                <div class="circle-yellow"></div>
-                <div class="circle-orange"></div>
-                <div class="circle-red"></div>
-                <div class="circle-black"></div>   
+                <div class="colorchoice-medium">
+                    <div class="circle-blue"></div>
+                    <div class="circle-yellow"></div>
+                    <div class="circle-orange"></div>
+                    <div class="circle-red"></div>
+                    <div class="circle-black"></div>  
+                </div>
                 <p>Color: blue, yellow, orange, red, black</p>
                 <p>Price: $59</p>
             </div>
             <div class="product">
                 <img src="images/Jacket-6.jpg" alt="Grey Insulated Jacket" class="product-image">
                 <h2 class="product-title">Alpha Insulated Jacket</h2>
-                <div class="circle-blue"></div>
-                <div class="circle-orange"></div> 
-                <div class="circle-black"></div> 
+                <div class="colorchoice-medium">
+                    <div class="circle-blue"></div>
+                    <div class="circle-orange"></div> 
+                    <div class="circle-black"></div> 
+                </div>
                 <p>Color: blue, orange, black</p>
                 <p>Price: $119</p>
             </div>
@@ -110,39 +122,52 @@
         <button class="see-more-button">See More</button>
     </main>
     <footer>
-        <section>
-            <h3>Shop</h3>
-            <ul>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Sale</li>
-                <li>Gift Card</li>
-            </ul>
-            <h3>My account</h3>
-            <ul>
-                <li>Log in/Sign up</li>
-                <li>Order Status</li>
-            </ul>
-            <h3>Help</h3>
-            <ul>
-                <li>FAQ</li>
-                <li>Shipping and Delivery</li>
-                <li>Return Policies</li>
-                <li>Terms and Conditions</li>
-                <li>Contact Us</li>
-            </ul>
-            <h3>About</h3>
-            <ul>
-                <li>Rainydays</li>
-                <li>Sustainability</li>
-                <li>Our Stores</li>
-                <li>Blog</li>
-            </ul>
-            <h3>Follow us</h3>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+        <section class="footer__content">
+            <div>
+                <img src="images/Logo-with-slogan.png" alt="Logo with Slogan" class="logo-with-slogan">
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Sale</li>
+                    <li>Gift Card</li>
+                </ul>
+            </div>
+            <div>
+                <h3>My account</h3>
+                <ul>
+                    <li>Log in/Sign up</li>
+                    <li>Order Status</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Help</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Shipping and Delivery</li>
+                        <li>Return Policies</li>
+                        <li>Terms and Conditions</li>
+                        <li>Contact Us</li>
+                    </ul>
+            </div>
+            <div>
+                <h3>About</h3>
+                    <ul>
+                        <li>Rainydays</li>
+                        <li>Sustainability</li>
+                        <li>Our Stores</li>
+                        <li>Blog</li>
+                    </ul>
+            </div>
+            <div>
+                <h3>Follow us</h3>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+            </div>
         </section>
         <p>&copy; 2025 Rainydays</p>
     </footer>
