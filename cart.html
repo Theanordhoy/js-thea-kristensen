@@ -22,9 +22,9 @@
         </nav>
     </header>
     <main>
-        <nav>
-            <i class="fa-solid fa-arrow-left"></i>
-            <p>Back</p>
+        <nav class="nav-back">
+             <a href="product.html"><i class="fa-solid fa-arrow-left"></i></a> 
+             <a href="product.html"><p>Back</p></a>
         </nav>
         <h1>Cart</h1>
         <section class="cart">
@@ -49,22 +49,22 @@
             </div>
             <div>
                 <a href="checkout.html" class="checkout-button">Checkout</a>
-                <p class="discount-code">Enter Discount Code</p>
-            </div>
+                <input type="text" class="discount-code-input" placeholder="Enter Discount Code">            </div>
         </section>
-        <section>
-            <h3>Don't miss out on these:</h3>
+        <h3>Don't miss out on these:</h3>
+        <section class="extra-products">
             <div class="extra-product__content">
                 <img src="images/Jacket-4.jpg" alt="Grey Softshell Jacket" class="product-image-small">
                 <div class="colorchoice-small">
                     <div class="circle-red-small"></div>
                     <div class="circle-black-small"></div>
                 </div>
-                <p>Color red, black</p>
-                <p>Scott Softshell Jacket</p>
-                <p>$89</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
+                <p class="extra-product__info">Scott Softshell Jacket</p>
+                <div class="price-cart">
+                    <p>$89</p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
             <div class="extra-product__content">
                 <img src="images/Jacket-2.jpg" alt="Black Windbreaker Jacket" class="product-image-small">
@@ -74,11 +74,12 @@
                     <div class="circle-yellow-small"></div>
                     <div class="circle-red-small"></div>
                 </div>
-                <p>Color blue, green, yellow, red</p>
-                <p>Scott Windbreaker 2.0</p>
-                <p>$99</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
+                <p class="extra-product__info">Scott Windbreaker 2.0</p>
+                <div class="price-cart">
+                    <p>$99</p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
             <div class="extra-product__content">
                 <img src="images/Jacket-5.jpg" alt="Green Fleece Jacket" class="product-image-small">
@@ -89,11 +90,12 @@
                     <div class="circle-red-small"></div>
                     <div class="circle-black-small"></div>
                 </div>
-                <p>Color blue, yellow, orange, red, black</p>
-                <p>Fleece Jacket</p>
-                <p>$59</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
+                <p class="extra-product__info">Fleece Jacket</p>
+                <div class="price-cart">
+                    <p>$59</p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
         </section>
     </main>

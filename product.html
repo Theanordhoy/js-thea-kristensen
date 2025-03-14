@@ -36,10 +36,12 @@
     <main>
         <nav>
             <a href="index.html" class="nav-breadcrumbs">Home</a>
-            <a href="mens-jackets.html" class="nav-breadcrumbs">Men's Jackets</a>
-            <a href="product.html" class="nav-breadcrumbs">Endurance Softshell Jacket</a>
-            <i class="fa-solid fa-arrow-left"></i>
-            <p>Back</p>
+            <a href="mens-jackets.html" class="nav-breadcrumbs slash">Men's Jackets</a>
+            <a href="product.html" class="nav-breadcrumbs slash">Endurance Softshell Jacket</a>
+            <div class="nav-back">
+                 <a href="mens-jackets.html"><i class="fa-solid fa-arrow-left"></i></a> 
+                <a href="mens-jackets.html"><p>Back</p></a>
+            </div>
         </nav>
         <section class="product-info">
             <div class="product-info__image">
@@ -53,8 +55,14 @@
                     <div class="circle-green-big"></div>
                     <div class="circle-black-big"></div>
                 </div>
-                <p>Color: red, blue, green, black</p>
-                <p>Size: S, M, L, XL, XXL</p>
+                <p>Color: Red, Blue, Green, Black</p>
+                <div class="sizes">
+                    <p class="circle-size">S</p>
+                    <p class="circle-size">M</p>
+                    <p class="circle-size">L</p>
+                    <p class="circle-size">XL</p>
+                    <p class="circle-size">XXL</p>
+                </div>
                 <p>Price: $79</p>
                 <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
                 <i class="fa-solid fa-heart"></i>
@@ -62,11 +70,15 @@
             <div>
                 <h2>Description</h2>
                 <p>This softshell jacket will take your adventures to the next level. It's lightweight, water resistant and wind resistant.</p>
-                <h3>Water Resistant</h3>
-                <i class="fa-solid fa-droplet"></i>
-                <i class="fa-solid fa-umbrella"></i>
-                <h3>Wind Resistant</h3>
-                <i class="fa-solid fa-wind"></i>
+                <div class="features">
+                    <h3>Water Resistant</h3>
+                    <i class="fa-solid fa-droplet"></i>
+                    <i class="fa-solid fa-umbrella"></i>
+                </div>
+                <div class="features">
+                    <h3>Wind Resistant</h3>
+                    <i class="fa-solid fa-wind"></i>
+                </div>
                 <h4>Details</h4>
             </div>
         </section>
@@ -78,11 +90,12 @@
                     <div class="circle-red-small"></div>
                     <div class="circle-black-small"></div>
                 </div>
-                <p>Color red, black</p>
-                <p>Scott Softshell Jacket</p>
-                <p>$89</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
+                <p class="extra-product__info">Scott Softshell Jacket</p>
+                <div class="price-cart">
+                    <p>$89</p>
+                    <i class="fa-solid fa-cart-shopping shoppingcart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
             <div class="extra-product__content">
                 <img src="images/Jacket-2.jpg" alt="Black Windbreaker Jacket" class="product-image-small">
@@ -92,11 +105,12 @@
                     <div class="circle-yellow-small"></div>
                     <div class="circle-red-small"></div>
                 </div>
-                <p>Color blue, green, yellow, red</p>
-                <p>Scott Windbreaker 2.0</p>
-                <p>$99</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
+                <p class="extra-product__info">Scott Windbreaker 2.0</p>
+                <div class="price-cart">
+                    <p>$99</p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
             <div class="extra-product__content">
                 <img src="images/Jacket-5.jpg" alt="Green Fleece Jacket" class="product-image-small">
@@ -107,11 +121,12 @@
                     <div class="circle-red-small"></div>
                     <div class="circle-black-small"></div>
                 </div>
-                <p>Color blue, yellow, orange, red, black</p>
-                <p>Fleece Jacket</p>
-                <p>$59</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
+                <p class="extra-product__info">Fleece Jacket</p>
+                <div class="price-cart">
+                    <p>$59</p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
         </section>
     </main>
