@@ -1,0 +1,71 @@
+.button-homepage-big {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.25rem;
+    background-color: #0A3641;
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 50px;
+    position: relative;
+    top: 590px;
+    left: 10px;
+    
+}
+
+.slogan {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: right;
+    padding: 50px 102px 0px 0px;
+}
+
+.slogan-part-two {
+    padding: 10px 50px 0px 0px;
+}
+
+.button-homepage-small {
+    font-size: 0.875rem;
+    text-decoration: none;
+    border:#000 solid 1px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.inspo-text {
+    font-family: 'oswald', sans-serif;
+}
+
+section a {
+    font-family: 'roboto', sans-serif;
+    color: #000;
+}
+
+.welcome {
+    background-image: url('../images/skiing.jpg');
+    min-height: 800px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.image-2 {
+    background-image: url('../images/hiking.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.image-3 {
+    background-image: url('../images/canoing.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inspiration-content {
+    margin: 20px 0px;
+}

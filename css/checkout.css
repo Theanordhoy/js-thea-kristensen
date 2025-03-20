@@ -1,0 +1,18 @@
+.form__input {
+    display: block;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.delivery-method,
+.payment-method,
+.terms {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

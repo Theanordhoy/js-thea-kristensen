@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,7 +29,7 @@
              <a href="product.html"><p>Back</p></a>
         </nav>
         <h1>Cart</h1>
-        <section class="cart">
+        <section class="cart__content">
             <div class="cart-items"> 
                 <div class="cart-image">
                     <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="product-image-cart">
@@ -36,8 +38,10 @@
                     <h2>Endurance Softshell Jacket</h2>
                     <p>Color: Red</p>
                     <p>Size: Large</p>
-                    <p>$79</p>
-                    <i class="fa-solid fa-trash"></i>
+                    <div class="price-cart">
+                        <p>$79</p>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
                 </div>
             </div>
             <div class="order-summary">
@@ -61,10 +65,13 @@
                 </div>
                 <p class="extra-product__info">Scott Softshell Jacket</p>
                 <div class="price-cart">
-                    <p>$89</p>
+                    <p class="price-extra-product">$89</p>
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                    <div>
+                        <input type="checkbox" id="heart-checkbox-11" class="heart-checkbox"/>
+                        <label for="heart-checkbox-11" class="heart-checkbox-icon"></label>     
+                    </div>                 
+                 </div>
             </div>
             <div class="extra-product__content">
                 <img src="images/Jacket-2.jpg" alt="Black Windbreaker Jacket" class="product-image-small">
@@ -76,9 +83,12 @@
                 </div>
                 <p class="extra-product__info">Scott Windbreaker 2.0</p>
                 <div class="price-cart">
-                    <p>$99</p>
+                    <p class="price-extra-product">$99</p>
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <input type="checkbox" id="heart-checkbox-12" class="heart-checkbox"/>
+                        <label for="heart-checkbox-12" class="heart-checkbox-icon"></label>     
+                    </div>                  
                 </div>
             </div>
             <div class="extra-product__content">
@@ -92,9 +102,12 @@
                 </div>
                 <p class="extra-product__info">Fleece Jacket</p>
                 <div class="price-cart">
-                    <p>$59</p>
+                    <p class="price-extra-product">$59</p>
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <input type="checkbox" id="heart-checkbox-13" class="heart-checkbox"/>
+                        <label for="heart-checkbox-13" class="heart-checkbox-icon"></label>     
+                    </div>                  
                 </div>
             </div>
         </section>
