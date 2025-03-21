@@ -22,12 +22,6 @@
     gap: 50px;
 }
 
-.price__product {
-    font-size: 1.125rem;
-    font-weight: 900;
-    margin-right: auto;
-}
-
 .see-more__button {
     display: flex;
     justify-content: center;
@@ -41,7 +35,7 @@
 .sort-and-relevance {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px 5px;
+    gap: 0px 2px;
     justify-content: flex-start;
     margin: 0px 0px 10px 0px;
     font-size: 0.75rem;

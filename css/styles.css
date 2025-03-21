@@ -6,6 +6,11 @@ body {
 
 main {
     margin: 0 auto;
+    
+}
+
+.main__content {
+    padding: 0px 5px;
     max-width: 1400px;
 }
 
@@ -38,6 +43,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px 0px;
+    margin: 30px 0px;
 }
 
 .extra-product__content {
@@ -78,6 +84,21 @@ header {
     cursor: pointer;
 }
 
+.price__product {
+    font-size: 1.125rem;
+    font-weight: 900;
+    margin-right: auto;
+}
+
+.price__summary {
+    font-weight: 800; 
+}
+
+.subtotal__summary {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Navigation*/
 .nav-links a {
     color: #0A3641;
@@ -105,6 +126,7 @@ header {
     background: #E8F8FB;
     padding: 20px 30px;
     font-size: 1.5rem;
+    margin: 10px 0px 0px 0px;
 }
 
 .nav__content {
@@ -116,7 +138,7 @@ header {
 .nav-icons {
     color: #0A3641;
     font-size: 1.5rem;
-    margin: 5px;
+    margin: 0px 30px;
 }
 
 .nav-breadcrumbs {
@@ -155,6 +177,18 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer__headings {
+    margin: 0px;
+}
+
+.shop__heading {
+    margin: 10px 0px 0px 0px;
+}
+
+.follow-us__heading {
+    margin: 0px 0px 10px 0px;
 }
 
 

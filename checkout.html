@@ -23,88 +23,104 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main__content">
         <nav class="nav-back">
             <a href="cart.html"><i class="fa-solid fa-arrow-left"></i></a> 
             <a href="cart.html"><p>Back</p></a>
        </nav>
         <h1>Checkout</h1>
-        <form class="checkout-form">
-            <fieldset>
-                <legend>Billing Address</legend>
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" class="form__input" required>
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" class="form__input" required>
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address" class="form__input" required>
-                <label for="zipcode">Zip Code</label>
-                <input type="tel" id="zipcode" name="zipcode" class="form__input" required>
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" class="form__input" required>
-                <label for="phonenumber">Phone Number</label>
-                <input type="tel" id="phonenumber" name="phonenumber" class="form__input" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form__input" required>
-            </fieldset>
-            <fieldset>
-                <legend>Delivery Method</legend>
-                <div class="delivery-method">
-                    <input type="radio" id="standard" name="delivery" value="standard" class="form__input" checked>
-                    <label for="standard">Standard (4-5 business days) Free</label>
-                </div>
-                <div class="delivery-method">
-                    <input type="radio" id="express" name="delivery" value="express" class="form__input">
-                    <label for="express">Express (1-2 business days) $9</label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Payment Details</legend>
+        <div class="checkout__content">
+            <form class="checkout-form">
+                <fieldset>
+                    <legend>Billing Address</legend>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" title="Enter Your First Name" class="form__input" required>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" title="Enter Your Last Name" class="form__input" required>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" title="Enter Your Address" class="form__input" required>
+                    <label for="zipcode">Zip Code</label>
+                    <input type="tel" id="zipcode" name="zipcode" title="Enter Your Zip Code" class="form__input" required>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" title="Enter Your City" class="form__input" required>
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" title="Enter Your Phone Number" class="form__input" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" title="Enter Your Email" class="form__input" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Method</legend>
+                    <div class="delivery-method">
+                        <input type="radio" id="standard" name="delivery" value="standard" class="form__input" checked>
+                        <label for="standard">Standard (4-5 business days) Free</label>
+                    </div>
+                    <div class="delivery-method">
+                        <input type="radio" id="express" name="delivery" value="express" class="form__input">
+                        <label for="express">Express (1-2 business days) $9</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Details</legend>
+                    <div class="payment-method">
+                        <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
+                        <label for="creditcard">Credit Card
+                        <input type="tel" id="creditcardnumber" name="creditcardnumber" title="Enter Your Card Number" class="form__input" placeholder="Card Number" required>
+                        <input type="text" id="cardholdername" name="cardholdername" title="Enter Cardholder Name" class="form__input" placeholder="Cardholder Name" required>
+                        <input type="tel" id="expirationdate" name="expirationdate" title="Enter Expiration Date" class="form__input" placeholder="Exp. Date MM.YYYY" required>
+                        <input type="tel" id="cvv" name="cvv" title="Enter CVV code" class="form__input" placeholder="CVV" required>
+                        </label>
+                    </div>
                 <div class="payment-method">
-                    <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
-                    <label for="creditcard">Credit Card
-                    <input type="tel" id="creditcardnumber" name="creditcardnumber" class="form__input" placeholder="Card Number" required>
-                    <input type="text" id="cardholdername" name="cardholdername" class="form__input" placeholder="Cardholder Name" required>
-                    <input type="tel" id="expirationdate" name="expirationdate" class="form__input" placeholder="Exp. Date MM.YYYY" required>
-                    <input type="tel" id="cvv" name="cvv" class="form__input" placeholder="CVV" required>
-                    </label>
+                        <input type="radio" id="Paypal" name="payment" value="Paypal" class="form__input">
+                        <label for="Paypal">Paypal</label>
                 </div>
-               <div class="payment-method">
-                    <input type="radio" id="Paypal" name="payment" value="Paypal" class="form__input">
-                    <label for="Paypal">Paypal</label>
-               </div>
-                <div class="payment-method">
-                    <input type="radio" id="Klarna" name="payment" value="Klarna" class="form__input">
-                    <label for="Klarna">Klarna</label>
+                    <div class="payment-method">
+                        <input type="radio" id="Klarna" name="payment" value="Klarna" class="form__input">
+                        <label for="Klarna">Klarna</label>
+                    </div>
+                </fieldset>
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" class="form__input" required>
+                    <label for="terms">I have read and agree to the Terms and Conditions</label>
                 </div>
-            </fieldset>
-            <div class="terms">
-                <input type="checkbox" id="terms" name="terms" class="form__input" required>
-                <label for="terms">I have read and agree to the Terms and Conditions</label>
-            </div>
-            <div class="terms">
-                <input type="checkbox" id="newsletter" name="newsletter" class="form__input">
-                <label for="newsletter">I want to recieve emails with offers, new trends and styles</label>
-            </div>
-        </form>
-        <a href="confirmation.html" class="place-order-button">Place Order</a>
-        <section>
-            <h1>Order Summary</h1>
-            <div class="cart-items">
-                <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="checkout-image">
-                <div>
-                    <h2>Endurance Softshell Jacket</h2>
-                    <p>Color: Red</p>
-                    <p>Size: Large</p>
+                <div class="terms">
+                    <input type="checkbox" id="newsletter" name="newsletter" class="form__input">
+                    <label for="newsletter">I want to recieve emails with offers, new trends and styles</label>
                 </div>
-            </div>
-            <div>
-                <p>Subtotal: $79</p>
-                <p>Shipping: $0</p>
-                <p>Estimated taxes: $0</p>
-                <p>Total: $79</p>
-            </div>
-        </section>
+                <div class="place-order">
+                    <a href="confirmation.html" class="place-order-button">Place Order</a>
+                </div>
+            </form>
+            <section class="checkout__summary">
+                <h1>Order Summary</h1>
+                <div class="cart-items">
+                    <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="checkout-image">
+                    <div>
+                        <h2>Endurance Softshell Jacket</h2>
+                        <p>Color: Red</p>
+                        <p>Size: Large</p>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <div class="subtotal__summary">
+                        <p>Subtotal:</p>
+                        <p class="price__summary">$79</p>
+                    </div>
+                    <div class="subtotal__summary">
+                        <p>Estimated shipping:</p>
+                        <p class="price__summary">$0</p>
+                    </div>
+                    <div class="subtotal__summary">
+                        <p>Estimated tax:</p>
+                        <p class="price__summary">$0</p>
+                    </div>
+                    <div class="subtotal__summary">
+                        <p>Total:</p>
+                        <p class="price__summary">$79</p>
+                    </div>
+                </div>
+            </section>
+        </div>    
     </main>
     <footer>
         <section class="footer__content">
@@ -112,7 +128,7 @@
                 <img src="images/Logo-with-slogan.png" alt="Logo with Slogan" class="logo-with-slogan">
             </div>
             <div>
-                <h3>Shop</h3>
+                <h3 class="shop__heading">Shop</h3>
                 <ul>
                     <li>Men</li>
                     <li>Women</li>
@@ -121,14 +137,14 @@
                 </ul>
             </div>
             <div>
-                <h3>My account</h3>
+                <h3 class="footer__headings">My account</h3>
                 <ul>
                     <li>Log in/Sign up</li>
                     <li>Order Status</li>
                 </ul>
             </div>
             <div>
-                <h3>Help</h3>
+                <h3 class="footer__headings">Help</h3>
                     <ul>
                         <li>FAQ</li>
                         <li>Shipping and Delivery</li>
@@ -138,7 +154,7 @@
                     </ul>
             </div>
             <div>
-                <h3>About</h3>
+                <h3 class="footer__headings">About</h3>
                     <ul>
                         <li>Rainydays</li>
                         <li>Sustainability</li>
@@ -147,7 +163,7 @@
                     </ul>
             </div>
             <div>
-                <h3>Follow us</h3>
+                <h3 class="follow-us__heading">Follow us</h3>
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-youtube"></i>

@@ -35,7 +35,7 @@
             </section>
         </nav>
     </header>
-    <main>
+    <main class="main__content">
         <nav>
             <a href="index.html" class="nav-breadcrumbs">Home</a>
             <a href="mens-jackets.html" class="nav-breadcrumbs slash">Men's Jackets</a>
@@ -65,24 +65,29 @@
                     <p class="circle-size">XL</p>
                     <p class="circle-size">XXL</p>
                 </div>
-                <p>Price: $79</p>
-                <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
-                <input type="checkbox" id="heart-checkbox-7" class="heart-checkbox"/>
-                <label for="heart-checkbox-7" class="heart-checkbox-icon"></label>   
+                <p class="price__product price__cart">$79</p>
+                <div class="cart__actions">
+                    <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
+                    <input type="checkbox" id="heart-checkbox-7" class="heart-checkbox"/>
+                    <label for="heart-checkbox-7" class="heart-checkbox-icon heart-checkbox-7"></label> 
+                </div>
             </div>
             <div>
                 <h2>Description</h2>
                 <p>This softshell jacket will take your adventures to the next level. It's lightweight, water resistant and wind resistant.</p>
-                <div class="features">
-                    <h3>Water Resistant</h3>
-                    <i class="fa-solid fa-droplet"></i>
+                <div class="features water-resistant">
                     <i class="fa-solid fa-umbrella"></i>
+                    <p class="features__text">Water Resistant</p>
                 </div>
-                <div class="features">
-                    <h3>Wind Resistant</h3>
+                <div class="features wind-resistant">
                     <i class="fa-solid fa-wind"></i>
+                    <p class="features__text">Wind Resistant</p>
                 </div>
-                <h4>Details</h4>
+                <details class="product-details">
+                    <summary>Product Details</summary>
+                    <p>This softshell Jacket is light and technical.</p>
+                    <p>Material: 90% Polyester, 10% Elastane.</p>
+                </details>
             </div>
         </section>
         <h3>You may also like:</h3>
@@ -148,7 +153,7 @@
                 <img src="images/Logo-with-slogan.png" alt="Logo with Slogan" class="logo-with-slogan">
             </div>
             <div>
-                <h3>Shop</h3>
+                <h3 class="shop__heading">Shop</h3>
                 <ul>
                     <li>Men</li>
                     <li>Women</li>
@@ -157,14 +162,14 @@
                 </ul>
             </div>
             <div>
-                <h3>My account</h3>
+                <h3 class="footer__headings">My account</h3>
                 <ul>
                     <li>Log in/Sign up</li>
                     <li>Order Status</li>
                 </ul>
             </div>
             <div>
-                <h3>Help</h3>
+                <h3 class="footer__headings">Help</h3>
                     <ul>
                         <li>FAQ</li>
                         <li>Shipping and Delivery</li>
@@ -174,7 +179,7 @@
                     </ul>
             </div>
             <div>
-                <h3>About</h3>
+                <h3 class="footer__headings">About</h3>
                     <ul>
                         <li>Rainydays</li>
                         <li>Sustainability</li>
@@ -183,7 +188,7 @@
                     </ul>
             </div>
             <div>
-                <h3>Follow us</h3>
+                <h3 class="follow-us__heading">Follow us</h3>
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-youtube"></i>

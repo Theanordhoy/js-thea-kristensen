@@ -23,37 +23,56 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main__content">
         <nav class="nav-back">
              <a href="product.html"><i class="fa-solid fa-arrow-left"></i></a> 
              <a href="product.html"><p>Back</p></a>
         </nav>
         <h1>Cart</h1>
         <section class="cart__content">
-            <div class="cart-items"> 
-                <div class="cart-image">
-                    <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="product-image-cart">
+            <div class="cart-items-summary">
+                <div class="items-in-cart">
+                    <div class="cart-image">
+                        <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="product-image-cart">
+                    </div>
+                    <div>
+                        <h2>Endurance Softshell Jacket</h2>
+                        <p>Color: Red</p>
+                        <p>Size: Large</p>
+                        <div class="counter__content">
+                            <label for="counter" class="counter-label">Quantity</label>
+                            <input type="number" id="counter" class="counter-input" value="1" min="0" max="10">
+                        </div>
+                        <div class="price-cart">
+                            <p class="price__summary">$79</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2>Endurance Softshell Jacket</h2>
-                    <p>Color: Red</p>
-                    <p>Size: Large</p>
-                    <div class="price-cart">
-                        <p>$79</p>
-                        <i class="fa-solid fa-trash"></i>
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="subtotal__summary">
+                        <p>Subtotal:</p>
+                        <p class="price__summary">$79</p>
+                    </div>
+                    <div class="subtotal__summary">
+                        <p>Estimated shipping:</p>
+                        <p class="price__summary">$0</p>
+                    </div>
+                    <div class="subtotal__summary">
+                        <p>Estimated tax:</p>
+                        <p class="price__summary">$0</p>
+                    </div>
+                    <div class="subtotal__summary">
+                        <p>Total:</p>
+                        <p class="price__summary">$79</p>
                     </div>
                 </div>
             </div>
-            <div class="order-summary">
-                <h2>Order Summary</h2>
-                <p>Subtotal: $79</p>
-                <p>Estimated shipping: $0</p>
-                <p>Estimated tax: $0</p>
-                <p>Total: $79</p>
-            </div>
-            <div>
+            <div class="checkout-discount__button">
                 <a href="checkout.html" class="checkout-button">Checkout</a>
-                <input type="text" class="discount-code-input" placeholder="Enter Discount Code">            </div>
+                <input type="text" class="discount-code-input" placeholder="Enter Discount Code">            
+            </div>
         </section>
         <h3>Don't miss out on these:</h3>
         <section class="extra-products">
@@ -118,7 +137,7 @@
                 <img src="images/Logo-with-slogan.png" alt="Logo with Slogan" class="logo-with-slogan">
             </div>
             <div>
-                <h3>Shop</h3>
+                <h3 class="shop__heading">Shop</h3>
                 <ul>
                     <li>Men</li>
                     <li>Women</li>
@@ -127,14 +146,14 @@
                 </ul>
             </div>
             <div>
-                <h3>My account</h3>
+                <h3 class="footer__headings">My account</h3>
                 <ul>
                     <li>Log in/Sign up</li>
                     <li>Order Status</li>
                 </ul>
             </div>
             <div>
-                <h3>Help</h3>
+                <h3 class="footer__headings">Help</h3>
                     <ul>
                         <li>FAQ</li>
                         <li>Shipping and Delivery</li>
@@ -144,7 +163,7 @@
                     </ul>
             </div>
             <div>
-                <h3>About</h3>
+                <h3 class="footer__headings">About</h3>
                     <ul>
                         <li>Rainydays</li>
                         <li>Sustainability</li>
@@ -153,7 +172,7 @@
                     </ul>
             </div>
             <div>
-                <h3>Follow us</h3>
+                <h3 class="follow-us__heading">Follow us</h3>
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-youtube"></i>

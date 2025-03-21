@@ -27,6 +27,14 @@
     gap: 10px;
 }
 
+.water-resistant {
+    margin: 40px 0px 20px 0px;
+}
+
+.wind-resistant {
+    margin: 20px 0px 40px 0px;
+}
+
 .circle-size {
     width: 35px;
     height: 35px;
@@ -42,4 +50,44 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.heart-checkbox-7 {
+    font-size: 2rem;
+}
+
+.cart__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.price__cart {
+    margin: 20px 0px 5px 5px;
+}
+
+.fa-wind,
+.fa-umbrella {
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.features__text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.product-details {
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+details > summary {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
 }
