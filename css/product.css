@@ -91,3 +91,19 @@ details > summary {
     font-weight: 500;
     cursor: pointer;
 }
+
+.size-radio {
+    display: none;
+}
+
+.size-label {
+    background-color: #E8F8FB;
+    color: #000;
+    margin: 15px 0px;
+}
+
+.size-radio:checked + .size-label {
+    background-color: #E8F8FB;
+    color: black;
+    border: black solid 3px;
+}

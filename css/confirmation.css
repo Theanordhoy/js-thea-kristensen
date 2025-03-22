@@ -22,8 +22,9 @@
 .order__summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
     padding: 20px;
+    gap: 0px 10px;
+    border-bottom: black solid 1px;
 }
 
 .order-details {
@@ -35,4 +36,26 @@
 
 .continue-shopping__button {
     align-self: center;
+    justify-self: center;
+    margin: 30px;
 }
+
+.confirmation__content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: black solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px auto;
+    justify-items: center;
+}
+
+.roboto__700 {
+    font-weight: 700;
+}
+
+.cart-items {
+    border-bottom: black solid 1px;
+    padding: 5px;
+}
+

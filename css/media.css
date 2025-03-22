@@ -17,6 +17,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .checkout-form,
+    .checkout__summary {
+        max-width: 600px;
+        margin: 30px auto;
+    }
     
 }
 
@@ -50,7 +56,35 @@
     grid-template-columns: auto auto;
     gap: 20px;
     margin: 40px auto;
-}
+    }
+
+    .order-details {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    }
+
+    .order-details__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    }
+
+    .cart-items {
+    border-bottom: none;
+    border-right: 1px solid black;
+    padding: 0px 80px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    }
+
+    .order__summary {
+        gap: 20px 100px;
+    }
+
+    .confirmation__content {
+        max-width: 1200px;
+    }
 
 
 }
@@ -76,7 +110,7 @@
         position: static;
         background: none;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .hamburger-icon {
@@ -167,12 +201,6 @@
         margin-left: auto;
     }
 
-    .cart-items {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 30px;
-        }
-
     .cart-items-summary {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -207,8 +235,16 @@
         gap: 0px;
     }
 
-    .main__content {
-        margin: 0px 20px;
+    .checkout__summary {
+        max-height: 500px;
+    }
+
+    .billing__info,
+    .payment__info {
+        min-width: 450px;
     }
     
+    .checkout__content {
+        max-width: 1200px;
+    }
 }
