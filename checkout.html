@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here you can fill in your billing address, choose delivery method and payment method. You can also see your order summary.">
     <title>Checkout</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/checkout.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
@@ -31,7 +37,7 @@
         <h1>Checkout</h1>
         <div class="checkout__content">
             <form class="checkout-form">
-                <fieldset>
+                <fieldset class="billing-payment-form">
                     <legend>Billing Address</legend>
                     <label for="firstname">First Name</label>
                     <input type="text" id="firstname" name="firstname" title="Enter Your First Name" class="form__input billing__info" required>
@@ -48,7 +54,7 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" title="Enter Your Email" class="form__input billing__info" required>
                 </fieldset>
-                <fieldset>
+                <fieldset class="billing-payment-form">
                     <legend>Delivery Method</legend>
                     <div class="delivery-method">
                         <input type="radio" id="standard" name="delivery" value="standard" class="form__input" checked>
@@ -59,7 +65,7 @@
                         <label for="express">Express (1-2 business days) $9</label>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="billing-payment-form">
                     <legend>Payment Details</legend>
                     <div class="payment-method">
                         <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
@@ -128,7 +134,7 @@
                 <img src="images/Logo-with-slogan.png" alt="Logo with Slogan" class="logo-with-slogan">
             </div>
             <div>
-                <h3 class="shop__heading">Shop</h3>
+                <h3 class="footer__headings">Shop</h3>
                 <ul>
                     <li>Men</li>
                     <li>Women</li>

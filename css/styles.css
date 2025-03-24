@@ -6,7 +6,6 @@ body {
 
 main {
     margin: 0 auto;
-    
 }
 
 .main__content {
@@ -99,6 +98,13 @@ header {
     justify-content: space-between;
 }
 
+.coming-soon {
+    justify-self: center;
+    margin-top: 100px;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.25rem;
+}
+
 /* Navigation*/
 .nav-links a {
     color: #0A3641;
@@ -124,7 +130,7 @@ header {
 .nav-links {
     position:absolute;
     background: #E8F8FB;
-    padding: 20px 30px;
+    padding: 20px 70px 100px 20px;
     font-size: 1.5rem;
     margin: 10px 0px 0px 0px;
 }
@@ -138,7 +144,12 @@ header {
 .nav-icons {
     color: #0A3641;
     font-size: 1.5rem;
-    margin: 0px 30px;
+    margin: 0px 30px 0px 0px;
+    align-self: center;
+}
+
+.icon {
+    margin-right: 5px;
 }
 
 .nav-breadcrumbs {
@@ -163,6 +174,11 @@ header {
     margin: 3px 3px;
 }
 
+.coming-soon-nav {
+    margin: 30px 30px;
+    list-style: none;
+}
+
 /* Footer */
 footer {
     background-color: #0A3641;
@@ -183,14 +199,9 @@ footer {
     margin: 0px;
 }
 
-.shop__heading {
-    margin: 10px 0px 0px 0px;
-}
-
 .follow-us__heading {
     margin: 0px 0px 10px 0px;
 }
-
 
 .logo-with-slogan {
     width: 120px;

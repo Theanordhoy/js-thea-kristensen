@@ -7,6 +7,9 @@
     flex-direction: column;
     gap: 20px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px black;
 }
 
 .cart-image {

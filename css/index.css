@@ -33,6 +33,7 @@
 
 .inspo-text {
     font-family: 'oswald', sans-serif;
+    padding: 5px;
 }
 
 section a {
@@ -68,4 +69,6 @@ section a {
 .inspiration-content {
     margin: 20px auto;
     max-width: 1400px;
+    padding: 10px 10px;
 }
+

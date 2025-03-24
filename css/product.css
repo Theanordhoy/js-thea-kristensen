@@ -3,6 +3,9 @@
     flex-direction: column; 
     gap: 30px;
     max-width: 1200px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px black;
 }
 
 .product-info__image {
@@ -83,7 +86,7 @@
     padding: 10px;
     margin: 10px 0px 20px 0px;
     border: solid 1px black;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 details > summary {

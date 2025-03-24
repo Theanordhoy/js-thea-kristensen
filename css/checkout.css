@@ -52,3 +52,8 @@
     max-width: 400px;
     margin: 0 auto;
 }
+
+.form__input,
+.billing-payment-form {
+    border-radius: 5px;
+}
