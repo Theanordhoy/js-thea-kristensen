@@ -53,6 +53,8 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    border: none;
+    padding: 0px;
 }
 
 .heart-checkbox-7 {
