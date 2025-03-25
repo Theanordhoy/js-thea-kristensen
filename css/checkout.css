@@ -19,6 +19,16 @@
     gap: 10px;
 }
 
+.creditcard-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .checkout__summary {
     display: grid;
     grid-template-rows: auto auto auto;

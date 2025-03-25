@@ -31,8 +31,7 @@
     </header>
     <main class="main__content">
         <nav class="nav-back">
-            <a href="cart.html"><i class="fa-solid fa-arrow-left"></i></a> 
-            <a href="cart.html"><p>Back</p></a>
+            <a href="cart.html"><i class="fa-solid fa-arrow-left"></i> Back</a> 
        </nav>
         <h1>Checkout</h1>
         <div class="checkout__content">
@@ -67,14 +66,17 @@
                 </fieldset>
                 <fieldset class="billing-payment-form">
                     <legend>Payment Details</legend>
-                    <div class="payment-method">
-                        <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
-                        <label for="creditcard">Credit Card
-                        <input type="tel" id="creditcardnumber" name="creditcardnumber" title="Enter Your Card Number" class="form__input payment__info" placeholder="Card Number" required>
-                        <input type="text" id="cardholdername" name="cardholdername" title="Enter Cardholder Name" class="form__input payment__info" placeholder="Cardholder Name" required>
-                        <input type="tel" id="expirationdate" name="expirationdate" title="Enter Expiration Date" class="form__input payment__info" placeholder="Exp. Date MM.YYYY" required>
-                        <input type="tel" id="cvv" name="cvv" title="Enter CVV code" class="form__input payment__info" placeholder="CVV" required>
-                        </label>
+                    <div class="payment-method creditcard-info">
+                        <div class="payment-method">
+                            <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
+                            <label for="creditcard">Credit Card</label>
+                        </div>
+                        <div>
+                            <input type="tel" id="creditcard" name="creditcardnumber" title="Enter Your Card Number" class="form__input payment__info" placeholder="Card Number" required>
+                            <input type="text" id="creditcard" name="cardholdername" title="Enter Cardholder Name" class="form__input payment__info" placeholder="Cardholder Name" required>
+                            <input type="tel" id="creditcard" name="expirationdate" title="Enter Expiration Date" class="form__input payment__info" placeholder="Exp. Date MM.YYYY" required>
+                            <input type="tel" id="creditcard" name="cvv" title="Enter CVV code" class="form__input payment__info" placeholder="CVV" required>
+                        </div>
                     </div>
                 <div class="payment-method">
                         <input type="radio" id="Paypal" name="payment" value="Paypal" class="form__input">
@@ -98,7 +100,7 @@
                 </div>
             </form>
             <section class="checkout__summary">
-                <h1>Order Summary</h1>
+                <h2>Order Summary</h2>
                 <div class="cart-items">
                     <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="checkout-image">
                     <div>

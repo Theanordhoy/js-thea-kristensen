@@ -159,9 +159,7 @@ header {
 }
 
 .nav-back {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    padding: 10px 0px;
 }
 
 .nav-back a {
