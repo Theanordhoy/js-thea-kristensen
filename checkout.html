@@ -24,93 +24,105 @@
 <body>
     <header>
         <nav class="nav__content">
+            <label for="menu-checkbox" id="menu-icon" class="hamburger-icon" aria-label="Like this item"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menu-checkbox">
             <ul class="nav-links">
                 <li><a href="index.html"><img src="images/Logo-witout-slogan.png" alt="Rainydays logo" class="logo-witout-slogan"></a></li>
+                <li><a href="mens-jackets.html">Men's</a></li>
+                <li><a href="coming-soon.html">Women's</a></li>
+                <li><a href="coming-soon.html">Sale</a></li>
+                <li><a href="coming-soon.html">About Us</a></li>
             </ul>
+            <section class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <i class="fa-solid fa-user icon"></i>
+                <i class="fa-solid fa-heart icon"></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </section>
         </nav>
     </header>
     <main class="main__content">
-        <nav class="nav-back">
+        <nav class="nav-back breadcrumbs__content">
             <a href="cart.html"><i class="fa-solid fa-arrow-left"></i> Back</a> 
        </nav>
-        <h1>Checkout</h1>
+        <h1 class="h1-headings">Checkout</h1>
         <div class="checkout__content">
             <form class="checkout-form">
                 <fieldset class="billing-payment-form">
                     <legend>Billing Address</legend>
-                    <label for="firstname">First Name</label>
+                    <label for="firstname" class="checkout-info">First Name</label>
                     <input type="text" id="firstname" name="firstname" title="Enter Your First Name" class="form__input billing__info" required>
-                    <label for="lastname">Last Name</label>
+                    <label for="lastname" class="checkout-info">Last Name</label>
                     <input type="text" id="lastname" name="lastname" title="Enter Your Last Name" class="form__input billing__info" required>
-                    <label for="address">Address</label>
+                    <label for="address" class="checkout-info">Address</label>
                     <input type="text" id="address" name="address" title="Enter Your Address" class="form__input billing__info" required>
-                    <label for="zipcode">Zip Code</label>
+                    <label for="zipcode" class="checkout-info">Zip Code</label>
                     <input type="tel" id="zipcode" name="zipcode" title="Enter Your Zip Code" class="form__input billing__info" required>
-                    <label for="city">City</label>
+                    <label for="city" class="checkout-info">City</label>
                     <input type="text" id="city" name="city" title="Enter Your City" class="form__input billing__info" required>
-                    <label for="phonenumber">Phone Number</label>
+                    <label for="phonenumber" class="checkout-info">Phone Number</label>
                     <input type="tel" id="phonenumber" name="phonenumber" title="Enter Your Phone Number" class="form__input billing__info" required>
-                    <label for="email">Email</label>
+                    <label for="email" class="checkout-info">Email</label>
                     <input type="email" id="email" name="email" title="Enter Your Email" class="form__input billing__info" required>
                 </fieldset>
                 <fieldset class="billing-payment-form">
                     <legend>Delivery Method</legend>
                     <div class="delivery-method">
                         <input type="radio" id="standard" name="delivery" value="standard" class="form__input" checked>
-                        <label for="standard">Standard (4-5 business days) Free</label>
+                        <label for="standard" class="checkout-info">Standard (4-5 business days) Free</label>
                     </div>
                     <div class="delivery-method">
                         <input type="radio" id="express" name="delivery" value="express" class="form__input">
-                        <label for="express">Express (1-2 business days) $9</label>
+                        <label for="express" class="checkout-info">Express (1-2 business days) $9</label>
                     </div>
                 </fieldset>
                 <fieldset class="billing-payment-form">
                     <legend>Payment Details</legend>
                     <div class="payment-method creditcard-info">
-                        <div class="payment-method">
+                        <div class="payment-method creditcard">
                             <input type="radio" id="creditcard" name="payment" value="creditcard" class="form__input" checked>
-                            <label for="creditcard">Credit Card</label>
+                            <label for="creditcard" class="checkout-info">Credit Card</label>
                         </div>
                         <div>
-                            <label for="creditcardnumber">Card Number</label>
+                            <label for="creditcardnumber" class="checkout-info">Card Number</label>
                             <input type="tel" id="creditcardnumber" name="creditcardnumber" title="Enter Your Card Number" class="form__input payment__info" required>
-                            <label for="cardholdername">Cardholder Name</label>
+                            <label for="cardholdername" class="checkout-info">Cardholder Name</label>
                             <input type="text" id="cardholdername" name="cardholdername" title="Enter Cardholder Name" class="form__input payment__info" required>
-                            <label for="expirationdate">Expiration Date</label>
+                            <label for="expirationdate" class="checkout-info">Expiration Date</label>
                             <input type="tel" id="expirationdate" name="expirationdate" title="Enter Expiration Date" class="form__input payment__info" placeholder="MM.YYYY" required>
-                            <label for="cvv">CVV</label>
+                            <label for="cvv" class="checkout-info">CVV</label>
                             <input type="tel" id="cvv" name="cvv" title="Enter CVV code" class="form__input payment__info" required>
                         </div>
                     </div>
                 <div class="payment-method">
                         <input type="radio" id="Paypal" name="payment" value="Paypal" class="form__input">
-                        <label for="Paypal">Paypal</label>
+                        <label for="Paypal" class="checkout-info">Paypal</label>
                 </div>
                     <div class="payment-method">
                         <input type="radio" id="Klarna" name="payment" value="Klarna" class="form__input">
-                        <label for="Klarna">Klarna</label>
+                        <label for="Klarna" class="checkout-info">Klarna</label>
                     </div>
                 </fieldset>
                 <div class="terms">
                     <input type="checkbox" id="terms" name="terms" class="form__input" required>
-                    <label for="terms">I have read and agree to the Terms and Conditions</label>
+                    <label for="terms" class="terms-newsletter">I have read and agree to the Terms and Conditions</label>
                 </div>
                 <div class="terms">
                     <input type="checkbox" id="newsletter" name="newsletter" class="form__input">
-                    <label for="newsletter">I want to recieve emails with offers, new trends and styles</label>
+                    <label for="newsletter" class="terms-newsletter">I want to recieve emails with offers, new trends and styles</label>
                 </div>
                 <div class="place-order">
                     <a href="confirmation.html" class="place-order-button">Place Order</a>
                 </div>
             </form>
             <section class="checkout__summary">
-                <h2>Order Summary</h2>
+                <h2 class="h2-heading">Order Summary</h2>
                 <div class="cart-items">
                     <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="checkout-image">
                     <div>
-                        <h2>Endurance Softshell Jacket</h2>
-                        <p>Color: Red</p>
-                        <p>Size: Large</p>
+                        <h2 class="h2-heading">Endurance Softshell Jacket</h2>
+                        <p class="color-heading">Color: Red</p>
+                        <p class="size-heading">Size: Large</p>
                     </div>
                 </div>
                 <div class="order-summary">
@@ -126,7 +138,7 @@
                         <p>Estimated tax:</p>
                         <p class="price__summary">$0</p>
                     </div>
-                    <div class="subtotal__summary">
+                    <div class="subtotal__summary total-summary">
                         <p>Total:</p>
                         <p class="price__summary">$79</p>
                     </div>
@@ -141,45 +153,45 @@
             </div>
             <div>
                 <h3 class="footer__headings">Shop</h3>
-                <ul>
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>Sale</li>
-                    <li>Gift Card</li>
-                </ul>
+                    <ul>
+                        <li><a href="mens-jackets.html" class="footer-links">Men</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Women</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Sale</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Gift Card</li></a>
+                    </ul>
             </div>
             <div>
                 <h3 class="footer__headings">My account</h3>
-                <ul>
-                    <li>Log in/Sign up</li>
-                    <li>Order Status</li>
-                </ul>
+                    <ul>
+                        <li><a href="coming-soon.html" class="footer-links">Log in/Sign up</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Order Status</li></a>
+                    </ul>
             </div>
             <div>
                 <h3 class="footer__headings">Help</h3>
                     <ul>
-                        <li>FAQ</li>
-                        <li>Shipping and Delivery</li>
-                        <li>Return Policies</li>
-                        <li>Terms and Conditions</li>
-                        <li>Contact Us</li>
+                        <li><a href="coming-soon.html" class="footer-links">FAQ</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Shipping and Delivery</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Return Policies</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Terms and Conditions</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Contact Us</li></a>
                     </ul>
             </div>
             <div>
                 <h3 class="footer__headings">About</h3>
                     <ul>
-                        <li>Rainydays</li>
-                        <li>Sustainability</li>
-                        <li>Our Stores</li>
-                        <li>Blog</li>
+                        <li><a href="coming-soon.html" class="footer-links">Rainydays</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Sustainability</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Our Stores</li></a>
+                        <li><a href="coming-soon.html" class="footer-links">Blog</li></a>
                     </ul>
             </div>
             <div>
                 <h3 class="follow-us__heading">Follow us</h3>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <a href="coming-soon.html" class="footer-links"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="coming-soon.html" class="footer-links"><i class="fa-brands fa-instagram"></i></a>
+                <a href="coming-soon.html" class="footer-links"><i class="fa-brands fa-youtube"></i></a>
+                <a href="coming-soon.html" class="footer-links"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </section>
         <p>&copy; 2025 Rainydays</p>

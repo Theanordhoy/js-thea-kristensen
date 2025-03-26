@@ -26,7 +26,7 @@
 .button-homepage-small {
     font-size: 0.875rem;
     text-decoration: none;
-    border:#000 solid 1px;
+    background-color: #8cB8C3;
     padding: 5px 10px;
     border-radius: 50px;
 }
@@ -34,6 +34,7 @@
 .inspo-text {
     font-family: 'oswald', sans-serif;
     padding: 5px;
+    text-transform: uppercase;
 }
 
 section a {
@@ -67,7 +68,7 @@ section a {
 }
 
 .inspiration-content {
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 1400px;
     padding: 10px 10px;
 }

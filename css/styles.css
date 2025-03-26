@@ -28,7 +28,7 @@ header {
 }
 
 .product-image {
-    height: 350px;
+    height: 320px;
     display: block;
 }
 
@@ -51,10 +51,11 @@ header {
 
 .extra-product__info {
     margin: 5px 0px 0px 0px;
+    font-size: 0.875rem;;
 }
 
 .price-extra-product {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     font-weight: 900;
     margin-right: auto;
 }
@@ -96,6 +97,11 @@ header {
 .subtotal__summary {
     display: flex;
     justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.total-summary {
+    border-top: black solid 1px;
 }
 
 .coming-soon {
@@ -105,6 +111,27 @@ header {
     margin-top: 100px;
     font-family: 'roboto', sans-serif;
     font-size: 1.25rem;
+}
+
+.h1-headings {
+    font-size: 1.5rem;
+}
+
+.h2-heading {
+    font-size: 1.125rem;
+}
+
+.size-heading,
+.color-heading,
+.counter-label,
+.checkout-info,
+.confirmation-details {
+    font-size: 0.875rem;
+}
+
+.terms-newsletter,
+.breadcrumbs__content {
+    font-size: 0.75rem;
 }
 
 /* Navigation*/
@@ -179,6 +206,10 @@ header {
     list-style: none;
 }
 
+.fa-cart-shopping {
+    color: #0A3641;
+}
+
 /* Footer */
 footer {
     background-color: #0A3641;
@@ -209,6 +240,12 @@ footer {
 
 .footer__content ul li {
     display: none;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
 }
 
 /* Color circles*/
@@ -300,7 +337,6 @@ footer {
 
 .add-to-cart-button, .checkout-button, .place-order-button {
     font-family: 'roboto', sans-serif;
-    font-size: 1.25rem;
     background-color: #0A3641;
     color: #fff;
     border-radius: 50px;
@@ -308,4 +344,9 @@ footer {
     text-decoration: none;
     border: 1px solid #0A3641;
     text-align: center;
+}
+
+.see-more-link {
+    text-decoration: none;
+    color: #000;
 }

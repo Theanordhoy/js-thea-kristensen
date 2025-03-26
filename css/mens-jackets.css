@@ -6,7 +6,7 @@
     font-family: 'roboto', sans-serif;
     display: block;
     margin-bottom: 10px;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -45,10 +45,6 @@
     padding: 5px 15px;
     border: 1px solid black;
     border-radius: 50px;
-}
-
-.mens-jackets-nav {
-    text-decoration: underline;
 }
 
 

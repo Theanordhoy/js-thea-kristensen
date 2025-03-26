@@ -54,7 +54,7 @@
    }
 
    .product-info-image {
-    height: 600px;
+    height: 550px;
    }
 
    .checkout__content {
@@ -78,7 +78,7 @@
     .cart-items {
     border-bottom: none;
     border-right: 1px solid black;
-    padding: 0px 80px;
+    padding: 0px 80px 0px 0px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
@@ -131,7 +131,6 @@
 
     .inspiration-content {
         display: grid;
-        flex-direction: row;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
@@ -251,10 +250,19 @@
     }
 
     .color-choosen-red {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .sizes {
-        margin-top: 40px;
+        margin-top: 30px;
     }
+
+    .button-homepage-small {
+        padding: 10px 15px;
+    }
+
+    .price__cart {
+        margin: 80px 0px 5px 5px;
+    }
+
 }
