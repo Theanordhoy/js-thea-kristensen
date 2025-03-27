@@ -30,6 +30,7 @@ header {
 .product-image {
     height: 320px;
     display: block;
+    margin-bottom: 8px;
 }
 
 .price-cart {
