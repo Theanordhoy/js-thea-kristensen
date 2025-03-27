@@ -210,7 +210,10 @@ header {
     list-style: none;
 }
 
-.fa-cart-shopping {
+.fa-cart-shopping,
+.fa-heart,
+.fa-user,
+.fa-magnifying-glass {
     color: #0A3641;
 }
 
