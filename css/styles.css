@@ -146,6 +146,15 @@ header {
     font-size: 0.75rem;
 }
 
+.header-navigation:hover {
+    scale: 1.1;
+}
+
+.product-details-text,
+.confirmation-text {
+    line-height: 1.5;
+}
+
 /* Navigation*/
 .nav-links a {
     color: #0A3641;
