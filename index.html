@@ -7,10 +7,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
+        <!-- <link rel="manifest" href="site.webmanifest"> -->
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
+        <link href="css/mens-jackets.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
+        <script src="js/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -41,23 +43,7 @@
             </nav>
         </header>
         <main>
-            <section class="welcome">
-                <h1 class="slogan">Pushing the</h1>
-                <h1 class="slogan slogan-part-two">Comfort Zone</h1>
-                <a href="mens-jackets.html" class="button-homepage-big">Shop Men's</a>
-                <a href="coming-soon.html" class="button-homepage-big">Shop Women's</a>
-            </section>
-            <section class="inspiration-content">
-                <div>
-                    <h2 class="inspo-text image-2">Explore the outdoors with Rainydays</h2>
-                    <a href="mens-jackets.html" class="button-homepage-small"> Shop Men's Jackets</a>
-                    <a href="coming-soon.html" class="button-homepage-small"> Shop Women's Jackets</a>
-                </div>
-                <div>
-                    <h2 class="inspo-text image-3">Quality products that will last for years</h2>
-                    <a href="coming-soon.html" class="button-homepage-small"> Shop Top Sellers</a>
-                </div>
-            </section>
+            <div id="container" class="products__list"></div>
         </main>
         <footer>
             <section class="footer__content">

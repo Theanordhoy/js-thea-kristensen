@@ -85,12 +85,6 @@ header {
     cursor: pointer;
 }
 
-.price__product {
-    font-size: 1.125rem;
-    font-weight: 900;
-    margin-right: auto;
-}
-
 .price__summary {
     font-weight: 800; 
 }

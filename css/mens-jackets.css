@@ -1,54 +1,13 @@
-.product {
-    justify-self: center;
-}
 
-.product-title {
-    font-family: 'roboto', sans-serif;
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    font-weight: 400;
-}
 
-.product-title a {
-    text-decoration: none;
-    color: black;
-}
 
-.products__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    gap: 50px;
-}
 
-.see-more__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.see-more-button {
-    margin: 20px;
-}
 
-.sort-and-relevance {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px 2px;
-    justify-content: flex-start;
-    margin: 0px 0px 10px 0px;
-    font-size: 0.75rem;
-}
 
-.sort {
-    padding: 5px 15px;
-    border: 1px solid black;
-    border-radius: 50px;
-}
 
-#mens-navigation {
-   text-decoration: underline;
-}
+
+
+
 
 

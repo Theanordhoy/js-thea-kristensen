@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <!--<link rel="manifest" href="site.webmanifest"> -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
+    <script src="js/product.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,122 +42,8 @@
             </section>
         </nav>
     </header>
-    <main class="main__content">
-        <nav class="breadcrumbs__content">
-            <a href="index.html" class="nav-breadcrumbs">Home</a>
-            <a href="mens-jackets.html" class="nav-breadcrumbs slash">Men's Jackets</a>
-            <a href="product.html" class="nav-breadcrumbs slash">Endurance Softshell Jacket</a>
-            <div class="nav-back">
-                <a href="mens-jackets.html"><i class="fa-solid fa-arrow-left"></i> Back</a> 
-            </div>
-        </nav>
-        <section class="product-info">
-            <div class="product-info__image">
-                <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="product-info-image">
-            </div>
-            <div class="product-info__content">
-                <h1 class="h1-headings">Endurance Softshell Jacket</h1>
-                <p class="color-choosen-red color-heading">Color: Red</p>
-                <div class="colorchoice-big">
-                    <div class="circle-red-big"></div>
-                    <div class="circle-blue-big"></div>
-                    <div class="circle-green-big"></div>
-                    <div class="circle-black-big"></div>
-                </div>
-                <fieldset class="sizes">
-                    <legend class="size-heading">Size:</legend>
-                    <input type="radio" id="size-s" name="size" value="s" class="size-radio">
-                    <label for="size-s" class="size-label circle-size">S</label>
-                    <input type="radio" id="size-m" name="size" value="m" class="size-radio">
-                    <label for="size-m" class="size-label circle-size">M</label>
-                    <input type="radio" id="size-l" name="size" value="l" class="size-radio">
-                    <label for="size-l" class="size-label circle-size">L</label>
-                    <input type="radio" id="size-xl" name="size" value="xl" class="size-radio">
-                    <label for="size-xl" class="size-label circle-size">XL</label>
-                    <input type="radio" id="size-xxl" name="size" value="xxl" class="size-radio">
-                    <label for="size-xxl" class="size-label circle-size">XXL</label>
-                </fieldset>
-                <p class="price__product price__cart">$79</p>
-                <div class="cart__actions">
-                    <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
-                    <input type="checkbox" id="heart-checkbox-7" class="heart-checkbox">
-                    <label for="heart-checkbox-7" class="heart-checkbox-icon heart-checkbox-7" aria-label="Like this item"></label> 
-                </div>
-            </div>
-            <div>
-                <h2 class="h2-heading">Description</h2>
-                <p class="product-details-text">This softshell jacket will take your adventures to the next level. It's lightweight, water resistant and wind resistant.</p>
-                <div class="features water-resistant">
-                    <i class="fa-solid fa-umbrella"></i>
-                    <p class="features__text">Water Resistant</p>
-                </div>
-                <div class="features wind-resistant">
-                    <i class="fa-solid fa-wind"></i>
-                    <p class="features__text">Wind Resistant</p>
-                </div>
-                <details class="product-details">
-                    <summary>Product Details</summary>
-                    <p class="product-details-text">Stay warm, dry and comfortabel with this softshell jacket. The jacket is light and technical and perfect for both hiking and outdoor adventures as well as for everyday use.</p>
-                    <p class="product-details-text">Material: 90% Polyester, 10% Elastane.</p>
-                </details>
-            </div>
-        </section>
-        <h3>You may also like:</h3>
-        <section class="extra-products">
-            <div class="extra-product__content">
-                <img src="images/Jacket-4.jpg" alt="Grey Softshell Jacket" class="product-image-small">
-                <div class="colorchoice-small">
-                    <div class="circle-red-small"></div>
-                    <div class="circle-black-small"></div>
-                </div>
-                <p class="extra-product__info">Scott Softshell Jacket</p>
-                <div class="price-cart">
-                    <p class="price-extra-product">$89</p>
-                    <i class="fa-solid fa-cart-shopping shoppingcart"></i>
-                    <div>
-                        <input type="checkbox" id="heart-checkbox-8" class="heart-checkbox">
-                        <label for="heart-checkbox-8" class="heart-checkbox-icon" aria-label="Like this item"></label>     
-                    </div>                  
-                </div>
-            </div>
-            <div class="extra-product__content">
-                <img src="images/Jacket-2.jpg" alt="Black Windbreaker Jacket" class="product-image-small">
-                <div class="colorchoice-small">
-                    <div class="circle-blue-small"></div>
-                    <div class="circle-green-small"></div>
-                    <div class="circle-yellow-small"></div>
-                    <div class="circle-red-small"></div>
-                </div>
-                <p class="extra-product__info">Scott Windbreaker 2.0</p>
-                <div class="price-cart">
-                    <p class="price-extra-product">$99</p>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <div>
-                        <input type="checkbox" id="heart-checkbox-9" class="heart-checkbox">
-                        <label for="heart-checkbox-9" class="heart-checkbox-icon" aria-label="Like this item"></label>     
-                    </div>                  
-                </div>
-            </div>
-            <div class="extra-product__content">
-                <img src="images/Jacket-5.jpg" alt="Green Fleece Jacket" class="product-image-small">
-                <div class="colorchoice-small">
-                    <div class="circle-blue-small"></div>
-                    <div class="circle-yellow-small"></div>
-                    <div class="circle-orange-small"></div>
-                    <div class="circle-red-small"></div>
-                    <div class="circle-black-small"></div>
-                </div>
-                <p class="extra-product__info">Fleece Jacket</p>
-                <div class="price-cart">
-                    <p class="price-extra-product">$59</p>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <div>
-                        <input type="checkbox" id="heart-checkbox-10" class="heart-checkbox">
-                        <label for="heart-checkbox-10" class="heart-checkbox-icon" aria-label="Like this item"></label>     
-                    </div>                  
-                </div>
-            </div>
-        </section>
+    <main>
+        <div id="container" class="product"></div>
     </main>
     <footer>
         <section class="footer__content">
