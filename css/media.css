@@ -9,10 +9,6 @@
         gap: 10px;
     }
 
-    .products__list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .product-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -35,10 +31,6 @@
 
     .footer__content{
         gap: 30px;
-    }
-
-    .products__list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .product-info {
@@ -182,11 +174,6 @@
     
     .footer__content i {
         margin-right: 10px;
-    }
-
-    .products__list {
-        display: grid;
-        grid-gap: 20px;
     }
 
     .extra-products {

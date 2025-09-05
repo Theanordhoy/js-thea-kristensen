@@ -60,3 +60,22 @@ genderFilter.addEventListener("change", () => {
 })
 
 fetchProducts();
+
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+    const count = cart.length
+    const cartCountElement = document.querySelector(".cart-count")
+
+    if(cartCountElement) {
+        if(count > 0){
+             cartCountElement.textContent = count
+            cartCountElement.style.display = "inline"
+    }   else {
+            cartCountElement.textContent = ""
+            cartCountElement.style.display = "none"
+    }
+        }
+       
+}
+
+updateCartCount()

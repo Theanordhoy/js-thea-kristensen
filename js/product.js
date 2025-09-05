@@ -20,28 +20,42 @@ async function fetchAndCreateProduct() {
         const title = document.createElement("h2")
         const price = document.createElement("p")
         const description = document.createElement("p")
+        const addToCartButton = document.createElement("button")
         const backButton = document.createElement("a")
+        const checkoutButton = document.createElement("a")
+
+        addToCartButton.addEventListener("click", () => {
+            addToCart(product)
+        })
 
         productDiv.className = "product"
         image.className = "product-info-image"
         title.className = "h1-headings"
         price.className = "price__product"
         description.className = "product-details-text"
+        addToCartButton.className = "addToCartButton"
         backButton.className = "backButton"
+        checkoutButton.className = "checkoutButton"
 
         image.src = product.image.url
         image.alt = product.image.alt
         title.textContent = product.title
         price.textContent = `$${product.price}`
         description.textContent = product.description
+        addToCartButton.textContent = "Add to cart"
         backButton.textContent = "Back to products"
         backButton.href = "index.html"
+        checkoutButton.textContent = "Go to checkout"
+        checkoutButton.href = "checkout.html"
 
         productDiv.appendChild(image)
         productDiv.appendChild(title)
         productDiv.appendChild(price)
         productDiv.appendChild(description)
+        productDiv.appendChild(addToCartButton)
+        productDiv.appendChild(checkoutButton)
         productDiv.appendChild(backButton)
+        
 
         container.appendChild(productDiv)
     } catch (error) {
@@ -51,3 +65,29 @@ async function fetchAndCreateProduct() {
 }
 
 fetchAndCreateProduct()
+
+function addToCart(product) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+    cart.push(product)
+    localStorage.setItem("cart", JSON.stringify(cart))
+    alert(`${product.title} has been added to your cart.`)
+}
+
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+    const count = cart.length
+    const cartCountElement = document.querySelector(".cart-count")
+
+    if(cartCountElement) {
+        if(count > 0){
+             cartCountElement.textContent = count
+            cartCountElement.style.display = "inline"
+    }   else {
+            cartCountElement.textContent = ""
+            cartCountElement.style.display = "none"
+    }
+        }
+       
+}
+
+updateCartCount()

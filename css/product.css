@@ -29,8 +29,17 @@
     text-align: center;
 }
 
-.add-to-cart-button {
-    margin: 10px 0px;
+.addToCartButton, 
+.checkoutButton {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #0A3641;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 72px;
+    text-decoration: none;
+    border: 1px solid #0A3641;
+    text-align: center;
 }
 
 .features {

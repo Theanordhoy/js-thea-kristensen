@@ -22,6 +22,17 @@ header {
     position:relative   
 }
 
+.cart-count {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: -7px;
+    left: -10px;
+}
+
 .product-image-small {
     width: auto;
     height: 200px;

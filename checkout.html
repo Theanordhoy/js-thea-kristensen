@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/checkout.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
+    <script src="js/checkout.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,7 +38,7 @@
                 <a href="coming-soon.html" aria-label="Like This Item"><i class="fa-solid fa-magnifying-glass icon"></i></a>
                 <a href="coming-soon.html" aria-label="Like This Item"><i class="fa-solid fa-user icon"></i></a>
                 <a href="coming-soon.html" aria-label="Like This Item"><i class="fa-solid fa-heart icon"></i></a>
-                <a href="cart.html" aria-label="Like This Item"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="checkout.html" aria-label="Like This Item"><i class="fa-solid fa-cart-shopping cart-icon"><span class="cart-count">0</span></i></a>
             </section>
         </nav>
     </header>
@@ -46,6 +47,9 @@
             <a href="cart.html"><i class="fa-solid fa-arrow-left"></i> Back</a> 
        </nav>
         <h1 class="h1-headings">Checkout</h1>
+        <div class="cart-container"></div>
+        <p class="total-price"></p>
+        <button class="clear-cart-button">Clear cart</button>
         <div class="checkout__content">
             <form class="checkout-form">
                 <fieldset class="billing-payment-form">
@@ -115,35 +119,6 @@
                     <a href="confirmation.html" class="place-order-button">Place Order</a>
                 </div>
             </form>
-            <section class="checkout__summary">
-                <h2 class="h2-heading">Order Summary</h2>
-                <div class="cart-items">
-                    <img src="images/Jacket-1.jpg" alt="Red Softshell Jacket" class="checkout-image">
-                    <div>
-                        <h2 class="h2-heading">Endurance Softshell Jacket</h2>
-                        <p class="color-heading">Color: Red</p>
-                        <p class="size-heading">Size: Large</p>
-                    </div>
-                </div>
-                <div class="order-summary">
-                    <div class="subtotal__summary">
-                        <p>Subtotal:</p>
-                        <p class="price__summary">$79</p>
-                    </div>
-                    <div class="subtotal__summary">
-                        <p>Estimated shipping:</p>
-                        <p class="price__summary">$0</p>
-                    </div>
-                    <div class="subtotal__summary">
-                        <p>Estimated tax:</p>
-                        <p class="price__summary">$0</p>
-                    </div>
-                    <div class="subtotal__summary total-summary">
-                        <p>Total:</p>
-                        <p class="price__summary">$79</p>
-                    </div>
-                </div>
-            </section>
         </div>    
     </main>
     <footer>
