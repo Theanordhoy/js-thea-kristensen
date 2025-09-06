@@ -18,6 +18,9 @@
 }
 
 .backButton {
+    display: flex;
+    width: 130px;
+    justify-content: center;
     font-family: 'roboto', sans-serif;
     font-size: 1rem;
     background-color: #8CB8C3;
@@ -40,95 +43,23 @@
     text-decoration: none;
     border: 1px solid #0A3641;
     text-align: center;
+    margin: 0px 10px 20px 0px;
 }
 
-.features {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
 
-.water-resistant {
-    margin: 40px 0px 20px 0px;
-}
 
-.wind-resistant {
-    margin: 20px 0px 40px 0px;
-}
 
-.circle-size {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    border: #000 solid 1px;
-}
 
-.sizes {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border: none;
-    padding: 0px;
-    margin: 20px 0px;
-}
 
-.heart-checkbox-7 {
-    font-size: 2rem;
-}
 
-.cart__actions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
 
-.price__cart {
-    margin: 20px 0px 5px 5px;
-}
 
-.fa-wind,
-.fa-umbrella {
-    border: solid 1px black;
-    border-radius: 50%;
-    padding: 8px;
-}
 
-.features__text {
-    font-size: 1rem;
-    font-weight: 500;
-}
 
-.product-details {
-    padding: 10px;
-    margin: 10px 0px 20px 0px;
-    border: solid 1px black;
-    border-radius: 10px;
-}
 
-details > summary {
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-}
 
-.size-radio {
-    display: none;
-}
 
-.size-label {
-    background-color: #E8F8FB;
-    color: #000;
-    margin: 15px 0px;
-}
 
-.size-radio:checked + .size-label {
-    background-color: #E8F8FB;
-    color: black;
-    border: black solid 3px;
-}
+
+
+

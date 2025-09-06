@@ -68,8 +68,14 @@ if (cartItems.length === 0) {
         item.appendChild(increaseButton)
         item.appendChild(removeButton)
         cartContainer.appendChild(item)
+       
     })
 
+    const placeOrderButton = document.createElement("a")
+    placeOrderButton.className = "place-order-button"
+    placeOrderButton.textContent = "Place Order"
+    placeOrderButton.href = "confirmation.html"
+    cartContainer.appendChild(placeOrderButton)
 }
 
 function updateQuantity(productId, change) {

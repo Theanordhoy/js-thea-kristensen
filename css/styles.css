@@ -33,11 +33,6 @@ header {
     left: -10px;
 }
 
-.product-image-small {
-    width: auto;
-    height: 200px;
-}
-
 .product-image {
     height: 320px;
     display: block;
@@ -50,64 +45,9 @@ header {
     gap: 10px;
 }
 
-.extra-products {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px 0px;
-    margin: 30px 0px;
-}
-
-.extra-product__content {
-    justify-self: center;
-}
-
-.extra-product__info {
-    margin: 5px 0px 0px 0px;
-    font-size: 0.875rem;;
-}
-
-.price-extra-product {
-    font-size: 0.875rem;
-    font-weight: 900;
-    margin-right: auto;
-}
-
 .checkout-image {
     width: 100px;
     height: auto;
-}
-
-.heart-checkbox {
-    display: none;
-}
-
-.heart-checkbox-icon::before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 500;
-    content: '\f004';
-    cursor: pointer;
-}
-
-.heart-checkbox:checked + .heart-checkbox-icon::before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 700;
-    content: '\f004';
-    color: #E31646;
-    cursor: pointer;
-}
-
-.price__summary {
-    font-weight: 800; 
-}
-
-.subtotal__summary {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.875rem;
-}
-
-.total-summary {
-    border-top: black solid 1px;
 }
 
 .coming-soon {
@@ -146,7 +86,6 @@ header {
     font-size: 0.875rem;
 }
 
-.terms-newsletter,
 .breadcrumbs__content {
     font-size: 0.75rem;
 }
@@ -277,79 +216,6 @@ footer {
     opacity: 0.7;
 }
 
-/* Color circles*/
-.circle-blue,
-.circle-black,
-.circle-green,
-.circle-yellow,
-.circle-orange,
-.circle-red {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-
-.circle-red-big,
-.circle-blue-big,
-.circle-green-big,
-.circle-black-big {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-}
-
-.circle-black-small,
-.circle-blue-small,
-.circle-green-small,
-.circle-orange-small,
-.circle-red-small,
-.circle-yellow-small {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-.circle-blue,
-.circle-blue-big,
-.circle-blue-small {
-    background-color: #1F4CF0;
-}
-
-.circle-green,
-.circle-green-big,
-.circle-green-small {
-    background-color: #0B8531;
-}
-
-.circle-black,
-.circle-black-big,
-.circle-black-small {
-    background-color: #000;
-}
-
-.circle-yellow,
-.circle-yellow-small {
-    background-color: #FFE44E;
-}
-
-.circle-orange,
-.circle-orange-small {
-    background-color: #F45116;
-}
-
-.circle-red,
-.circle-red-big,
-.circle-red-small {
-    background-color: #EB1010;
-}
-
-.colorchoice-medium,
-.colorchoice-big,
-.colorchoice-small {
-    display: flex;
-    gap: 5px;
-}
-
 /* Buttons */
 .see-more-button, .continue-shopping {
     font-family: 'roboto', sans-serif;
@@ -374,7 +240,3 @@ footer {
     text-align: center;
 }
 
-.see-more-link {
-    text-decoration: none;
-    color: #000;
-}
