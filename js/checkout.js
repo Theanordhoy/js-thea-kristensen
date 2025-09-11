@@ -2,8 +2,15 @@ const cartContainer = document.querySelector(".cart-container")
 const totalPriceElement = document.querySelector(".total-price")
 const clearCartButton = document.querySelector(".clear-cart-button")
 import { showLoading, hideLoading } from "./loading.js"
+import { showAlert } from "./alert.js"
 
-let cart = JSON.parse(localStorage.getItem("cart")) || []
+let cart = []
+    try {
+        cart = JSON.parse(localStorage.getItem("cart")) || []
+    } catch (error) {
+        console.error("Error parsing cart from localStorage", error)
+        showAlert("There was an error loading your cart. Please try again.")
+    }    
 
 const groupedCart = []
 
@@ -82,7 +89,8 @@ if (cartItems.length === 0) {
 
 function updateQuantity(productId, change) {
     showLoading()
-    if (change > 0) {
+    try {
+         if (change > 0) {
         const product = cart.find(p => p.id === productId)
         if (product) {
             cart.push({...product})
@@ -94,11 +102,13 @@ function updateQuantity(productId, change) {
         }
     }
     localStorage.setItem("cart", JSON.stringify(cart))
-    setTimeout(() => {
+    } catch (error) {
+        console.error("Error updating cart", error)
+        showAlert("There was an error updating your cart. Please try again.")
+    } finally {
         hideLoading()
         location.reload()
-    }, 200)
-    
+    }
 }
 
 function removeFromCart(productId) {

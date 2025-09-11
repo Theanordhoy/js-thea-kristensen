@@ -3,6 +3,7 @@ const genderFilter = document.querySelector("#genderFilter")
 const API_URL = "https://v2.api.noroff.dev/rainy-days"
 let allProducts = []
 import { showLoading, hideLoading } from "./loading.js"
+import { showAlert } from "./alert.js"
 
 async function fetchProducts() {
     showLoading()
@@ -13,6 +14,7 @@ async function fetchProducts() {
         renderProducts(allProducts)
     }  catch (error) {
         console.error("Failed to fetch and create products", error)
+        showAlert("Failed to load products. Please try again later.")
     } finally {
         hideLoading()
     }

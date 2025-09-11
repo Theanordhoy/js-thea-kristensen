@@ -38,6 +38,15 @@ main {
     }
 }
 
+.alert-box {
+    display: none;
+    background-color: #ffe0e0;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 header {
     position:relative   
 }

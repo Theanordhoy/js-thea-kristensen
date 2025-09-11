@@ -1,6 +1,7 @@
 const container = document.querySelector("#container")
 const API_URL = "https://v2.api.noroff.dev/rainy-days"
 import { showLoading, hideLoading } from "./loading.js"
+import { showAlert } from "./alert.js"
 
 async function fetchAndCreateProduct() {
     showLoading()
@@ -10,6 +11,7 @@ async function fetchAndCreateProduct() {
 
         if(!id) {
             container.textContent = "No product ID provided"
+            showAlert("No product ID provided. Please go back to the product page.")
             return
         }
 
@@ -70,6 +72,7 @@ async function fetchAndCreateProduct() {
     } catch (error) {
         console.error("Failed to fetch and create product", error)
         container.textContent = "Failed to load product"
+        showAlert("Failed to load product. Please try again later.")
     } finally {
         hideLoading()
     }
@@ -81,7 +84,7 @@ function addToCart(product) {
     const cart = JSON.parse(localStorage.getItem("cart")) || []
     cart.push(product)
     localStorage.setItem("cart", JSON.stringify(cart))
-    alert(`${product.title} has been added to your cart.`)
+    showAlert(`${product.title} has been added to your cart.`)
 }
 
 function updateCartCount() {
