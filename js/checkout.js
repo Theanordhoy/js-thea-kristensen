@@ -1,20 +1,22 @@
 const cartContainer = document.querySelector(".cart-container")
 const totalPriceElement = document.querySelector(".total-price")
 const clearCartButton = document.querySelector(".clear-cart-button")
+import { showLoading, hideLoading } from "./loading.js"
 
 let cart = JSON.parse(localStorage.getItem("cart")) || []
 
-const groupedCart = {}
+const groupedCart = []
 
 cart.forEach(product => {
-    if (groupedCart[product.id]) {
-        groupedCart[product.id].quantity += 1
+    const index = groupedCart.findIndex(p => p.id === product.id)
+    if (index !== -1) {
+        groupedCart[index].quantity += 1
     } else {
-        groupedCart[product.id] = { ...product, quantity: 1 }
+        groupedCart.push({ ...product, quantity: 1 })
     }
 })
 
-const cartItems = Object.values(groupedCart)
+const cartItems = groupedCart
 
 let total = 0
 
@@ -79,10 +81,11 @@ if (cartItems.length === 0) {
 }
 
 function updateQuantity(productId, change) {
+    showLoading()
     if (change > 0) {
         const product = cart.find(p => p.id === productId)
         if (product) {
-            cart.push(product)
+            cart.push({...product})
         }
     } else {
         const index = cart.findIndex(p => p.id === productId)
@@ -91,27 +94,34 @@ function updateQuantity(productId, change) {
         }
     }
     localStorage.setItem("cart", JSON.stringify(cart))
-    location.reload()
+    setTimeout(() => {
+        hideLoading()
+        location.reload()
+    }, 200)
+    
 }
 
 function removeFromCart(productId) {
+    showLoading()
     const updatedCart = cart.filter(product => product.id !== productId)
     localStorage.setItem("cart", JSON.stringify(updatedCart))
+    hideLoading()
     location.reload()
 }
 
-if (clearCartButton) {
-    clearCartButton.addEventListener("click", () => {
-        localStorage.removeItem("cart")
-        location.reload() 
+
+clearCartButton.addEventListener("click", () => {
+    showLoading()
+    localStorage.removeItem("cart")
+    hideLoading()
+    location.reload() 
     })
-}
+
 
 
 totalPriceElement.textContent = `Total: $${total.toFixed(2)}`
 
 function updateCartCount() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || []
     const count = cart.length
     const cartCountElement = document.querySelector(".cart-count")
 

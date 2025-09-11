@@ -20,7 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
-    <script src="js/product.js" defer></script>
+    <script src="js/product.js" type="module" defer></script>
+    <script src="js/loading.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -43,6 +44,10 @@
         </nav>
     </header>
     <main>
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
         <div id="container" class="product"></div>
     </main>
     <footer>
