@@ -85,7 +85,7 @@ function addToCart(product) {
     cart.push(product)
     localStorage.setItem("cart", JSON.stringify(cart))
     updateCartCount()
-    showAlert(`${product.title} has been added to your cart.`)
+    showAlert(`${product.title} has been added to your cart.`, 5000, "success")
 }
 
 function updateCartCount() {
