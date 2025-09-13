@@ -50,7 +50,7 @@ if (cartItems.length === 0) {
         image.alt = product.image.alt 
         title.textContent = product.title
         price.textContent = `$${product.price}`
-        quantity.textContent = `Quantity: ${product.quantity}`
+        quantity.textContent = `${product.quantity}`
         increaseButton.textContent = "+"
         decreaseButton.textContent = "-"
         removeButton.textContent = "Remove"
@@ -72,8 +72,8 @@ if (cartItems.length === 0) {
         item.appendChild(image)
         item.appendChild(title)
         item.appendChild(price)
-        item.appendChild(quantity)
         item.appendChild(decreaseButton)
+        item.appendChild(quantity)
         item.appendChild(increaseButton)
         item.appendChild(removeButton)
         cartContainer.appendChild(item)
@@ -127,9 +127,27 @@ clearCartButton.addEventListener("click", () => {
     location.reload() 
     })
 
+function clearCartButtonVisibility() {
+    if (cart.length === 0) {
+        clearCartButton.style.display = "none"
+    } else {
+        clearCartButton.style.display = "inline-block"
+    }
+}
 
+clearCartButtonVisibility()
 
 totalPriceElement.textContent = `Total: $${total.toFixed(2)}`
+
+function totalPriceElementVisibility() {
+    if (cart.length === 0) {
+        totalPriceElement.style.display = "none"
+    } else {
+        totalPriceElement.style.display = "block"
+    }
+}
+
+totalPriceElementVisibility()
 
 function updateCartCount() {
     const count = cart.length
