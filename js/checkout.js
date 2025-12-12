@@ -33,18 +33,23 @@ if (cartItems.length === 0) {
     cartItems.forEach(product => {
         const item = document.createElement("div")
         const image = document.createElement("img")
+        const productInfo = document.createElement("div")
         const title = document.createElement("h2")
         const price = document.createElement("p")
+        const updateCartQuantity = document.createElement("div")
         const quantity = document.createElement("p")
         const increaseButton = document.createElement("button")
         const decreaseButton = document.createElement("button")
-        const removeButton = document.createElement("button")
+        const removeButton = document.createElement("i")
 
         item.className = "cart-item"
         image.className = "cart-product-image"
+        productInfo.className = "cart-product-info"
+        title.className = "cart-product-title"
+        updateCartQuantity.className = "update-cart-quantity"
         increaseButton.className = "quantity-button"
         decreaseButton.className = "quantity-button"
-        removeButton.className = "remove-button"
+        removeButton.className = "fa-solid fa-trash remove-button"
 
         image.src = product.image.url 
         image.alt = product.image.alt 
@@ -53,7 +58,6 @@ if (cartItems.length === 0) {
         quantity.textContent = `${product.quantity}`
         increaseButton.textContent = "+"
         decreaseButton.textContent = "-"
-        removeButton.textContent = "Remove"
 
         increaseButton.addEventListener("click", () => {
             updateQuantity(product.id, 1)
@@ -70,12 +74,14 @@ if (cartItems.length === 0) {
         total += product.price * product.quantity
         
         item.appendChild(image)
-        item.appendChild(title)
-        item.appendChild(price)
-        item.appendChild(decreaseButton)
-        item.appendChild(quantity)
-        item.appendChild(increaseButton)
-        item.appendChild(removeButton)
+        item.appendChild(productInfo)
+        productInfo.appendChild(title)
+        productInfo.appendChild(price)
+        item.appendChild(updateCartQuantity)
+        updateCartQuantity.appendChild(decreaseButton)
+        updateCartQuantity.appendChild(quantity)
+        updateCartQuantity.appendChild(increaseButton)
+        updateCartQuantity.appendChild(removeButton)
         cartContainer.appendChild(item)
        
     })

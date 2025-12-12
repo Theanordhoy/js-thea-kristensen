@@ -68,7 +68,8 @@ header {
     font-size: 0.8rem;
     position: relative;
     bottom: -7px;
-    left: -10px;
+    left: 15px;
+    position: absolute;
 }
 
 .product-image {
@@ -214,6 +215,10 @@ header {
 .fa-user,
 .fa-magnifying-glass {
     color: #0A3641;
+}
+
+.fa-cart-shopping {
+    position: relative;
 }
 
 /* Footer */
