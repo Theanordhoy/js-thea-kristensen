@@ -94,6 +94,10 @@ main {
     max-width: 700px;
 }
 
+.fa-trash {
+    cursor: pointer;
+}
+
 
 
 
